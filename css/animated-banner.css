@@ -1,0 +1,13 @@
+.video-player {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin-inline: calc(50% - 50vw);
+  overflow-y: clip;
+}
+
+#hero-banner-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}

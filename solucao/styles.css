@@ -1,0 +1,209 @@
+@import url("../css/styles.css");
+@import url("../css/animated-banner.css");
+
+p + p {
+  margin-top: 1rem;
+}
+
+.background-shim {
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.video-player {
+  max-height: inherit;
+}
+
+.banner-hero {
+  max-height: 60vh;
+}
+
+.banner-hero__content {
+  grid-column: 2 / -2;
+  grid-row: 3;
+  align-self: flex-end;
+  transform: translateY(65%);
+}
+
+.banner-hero__title {
+  max-width: 70ch;
+}
+
+.clickable-card__list {
+  display: flex;
+  margin-inline: -2rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.clickable-card__item {
+  flex: 1;
+  border-radius: 4px;
+  position: relative;
+}
+
+.card-item__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 3.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.donate-background {
+  background-image: url("../assets/photos/side-whale.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.diver-background {
+  background-image: url("../assets/photos/diver-volunteer.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+main {
+  margin-top: 16.25rem;
+}
+
+.section-header--title {
+  margin-bottom: 1rem;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.card img {
+  grid-area: image;
+  width: 100%;
+}
+
+.card--landscape {
+  display: grid;
+  grid-template-areas: "image content";
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card__content {
+  grid-area: content;
+  padding: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-flow: column;
+}
+
+.card + .card {
+  margin-top: 1.5rem;
+}
+
+.card--image-right {
+  grid-template-areas: "content image";
+}
+
+.grid-overflow {
+  margin-inline: -2rem;
+  width: calc(100% + 2rem);
+}
+
+.our-benefits-section {
+  display: grid;
+  grid-column-gap: 32px;
+  margin-block: 112px;
+  row-gap: 64px;
+  grid-template-areas:
+    ". ct ct ct ct ct c1 c1 c1 c1 c1 ."
+    ". hr hr hr hr hr hr hr hr hr hr hr"
+    ". c2 c2 c2 c2 c2 c3 c3 c3 c3 c3 .";
+}
+
+.our-benefits__divider {
+  grid-area: hr;
+  border: 0;
+  width: 100%;
+  border-top: 1px solid rgba(114, 116, 118, 0.3);
+}
+
+.benefit__title {
+  font-family: var(--ff-inter);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.benefit {
+  gap: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.benefit:first-of-type .benefit__title {
+  font-size: 1.75rem;
+  line-height: 110%;
+}
+
+.benefit:first-of-type {
+  grid-area: c1;
+}
+
+.benefit:nth-of-type(2) {
+  grid-area: c2;
+}
+
+.benefit:nth-of-type(3) {
+  grid-area: c3;
+}
+
+.our-benefits-section__title {
+  grid-area: ct;
+  align-self: end;
+}
+
+/* --- BECAME A VOLUNTEER --- */
+
+.became-a-volunteer__container {
+  z-index: 1;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.became-a-volunteer__container p {
+  color: var(--white);
+  text-transform: none;
+  align-items: center;
+}
+
+.became-a-volunteer-section {
+  position: relative;
+  padding-block: 8.875rem;
+  margin-bottom: 0;
+  background-image: url(../assets/photos/ocean-corals.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.became-a-volunteer__description {
+  font-family: var(--ff-inter);
+  font-size: 2rem;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#became-a-volunteer-background {
+  width: 100vw;
+  transform: translateY(-25%);
+  height: 100vh;
+  object-fit: cover;
+}

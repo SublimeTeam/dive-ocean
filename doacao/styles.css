@@ -1,0 +1,78 @@
+@import url("../css/styles.css");
+
+.banner-hero {
+  max-height: 50vh;
+}
+
+.banner-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  grid-row: 3;
+  width: 100%;
+  align-self: center;
+  grid-column: 2 / -2;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.banner-hero__divider {
+  grid-row: 6;
+}
+
+.donate-section__container {
+  text-align: center;
+}
+
+.donate-section__title {
+  margin-bottom: 1rem;
+}
+
+.donate-section__container > div {
+  justify-self: center;
+}
+
+.donators__list {
+  display: flex;
+  flex-flow: column;
+  margin-top: 3.75rem;
+}
+
+.donators__list img {
+  width: 84px;
+  height: 84px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.donators__item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.donators__item:nth-child(even) {
+  display: flex;
+  padding: 1rem 5rem;
+  background-color: #f6f6f6;
+}
+
+.donators-item__message {
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.bold-text {
+  font-weight: 800;
+  font-family: var(--ff-inter);
+  color: var(--black);
+  font-size: 16px;
+}

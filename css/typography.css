@@ -1,0 +1,109 @@
+/* Headline Styles */
+.headline--lg {
+  font-family: var(--ff-kufam);
+  font-size: 9.75rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.78em;
+  letter-spacing: 0;
+}
+
+.headline--md {
+  font-family: var(--ff-kufam);
+  font-size: 5.5rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.headline--sm {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.headline--xs {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+/* Body Text Styles */
+.body--lg {
+  font-family: var(--ff-inter);
+  font-size: 2rem;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.body--md {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122%;
+  color: var(--white);
+}
+
+.body--sm {
+  font-size: 1.5rem;
+  font-family: var(--ff-inter);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.body--xs {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* Button Text Styles */
+.button--md {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button--sm {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Specific Text Styles */
+.special--headline {
+  text-indent: -0.25rem;
+}
+
+.underline--sm::after {
+  content: "";
+  border-bottom: solid var(--white) 2px;
+  display: block;
+  width: 50%;
+  position: absolute;
+  transform: translateY(-0.5em);
+  left: 0;
+  margin-left: -2.5em;
+  opacity: 0.6;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+
+/* --- UTILITY --- */
+
+.translucent-text {
+  color: var(--white);
+  opacity: 0.7;
+  mix-blend-mode: hard-light;
+  opacity: 0.8;
+}

@@ -1,0 +1,235 @@
+@import url("./css/styles.css");
+@import url("./css/animated-banner.css");
+
+.banner-hero-cta {
+  justify-self: center;
+  grid-column: 3 / 11;
+  mix-blend-mode: hard-light;
+  align-self: center;
+  grid-row: 3;
+}
+
+.banner-hero-cta p {
+  font-size: 18px;
+  mix-blend-mode: hard-light;
+  opacity: 0.8;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  width: 35ch;
+  line-height: 122%;
+}
+
+.banner-hero-cta h2 {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  color: white;
+}
+
+.banner-hero-cta h2 span:first-child {
+  align-self: start;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+  opacity: 0.7;
+}
+
+.banner-hero-cta h2 strong {
+  font-family: var(--ff-kufam);
+  font-size: 9.75rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.78em;
+  letter-spacing: 0;
+  transform: translateY(1rem);
+  text-indent: -0.25rem;
+  opacity: 0.8;
+}
+
+.banner-hero-cta h2 span:last-child {
+  align-self: end;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+  opacity: 0.7;
+}
+
+.banner-hero-cta h2 span:last-child::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: solid white 2px;
+  position: absolute;
+  transform: translateY(-0.5em);
+  left: 0;
+  opacity: 0.6;
+  margin-left: -2.5em;
+}
+
+.support-text-1 {
+  grid-row: 4;
+  grid-column: 1 / span 3;
+  color: white;
+}
+
+.support-text-2 {
+  grid-row-start: 4;
+  grid-column: 4 / span 3;
+  color: white;
+}
+
+.button--watch-video {
+  display: inline-flex;
+  padding: 0;
+  height: min-content;
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.support-text-3 {
+  grid-row: 3 / -2;
+  grid-column: 12 / span 1;
+  flex-flow: row-reverse;
+  writing-mode: vertical-rl;
+}
+
+.support-text-3 span {
+  transform: scale(-1);
+}
+
+.section-title {
+  font-family: var(--ff-kufam);
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-title--lg {
+  font-size: 5.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.challenges-section {
+  display: grid;
+  grid-column-gap: 32px;
+  margin-block: 112px;
+  row-gap: 64px;
+  grid-template-areas:
+    ". ct ct ct ct ct c1 c1 c1 c1 c1 ."
+    ". hr hr hr hr hr hr hr hr hr hr hr"
+    ". c2 c2 c2 c2 c2 c3 c3 c3 c3 c3 .";
+}
+
+.challenges__divider {
+  grid-area: hr;
+  border: 0;
+  width: 100%;
+  border-top: 1px solid rgba(114, 116, 118, 0.3);
+}
+
+.challenge__title {
+  font-family: var(--ff-inter);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.challenge {
+  gap: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.challenge:first-of-type .challenge__title {
+  font-size: 1.75rem;
+  line-height: 110%;
+}
+
+.challenge:first-of-type {
+  grid-area: c1;
+}
+
+.challenge:nth-of-type(2) {
+  grid-area: c2;
+}
+
+.challenge:nth-of-type(3) {
+  grid-area: c3;
+}
+
+.challenges-section__title {
+  grid-area: ct;
+  align-self: end;
+}
+
+.section-title--md {
+  font-size: 3.375rem;
+  margin-bottom: 1rem;
+}
+
+.our-mission-section {
+  position: relative;
+  padding-block: 8.875rem;
+}
+
+.our-mission__description {
+  font-family: var(--ff-inter);
+  font-size: 2rem;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#our-mission--background {
+  width: 100vw;
+  transform: translateY(-25%);
+  height: 100vh;
+  object-fit: cover;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.55;
+  z-index: 1;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-list__item {
+  display: flex;
+  flex-flow: column;
+}
+
+.team-list__item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.team-list__item:nth-child(odd) {
+  margin-top: 3.625rem;
+}
+
+.team-item__name {
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--black);
+  margin-block: 0.75rem 0.25rem;
+}

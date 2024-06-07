@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dive Ocean - Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="grid-container banner-hero">
+      <nav class="main-nav">
+        <a href="/index.html">
+          <img src="./assets/logo.svg" alt="Home pageg" />
+        </a>
+        <ul class="menu">
+          <li><a href="/desafio">Os desafios</a></li>
+          <li><a href="/estudos">Estudos</a></li>
+          <li><a href="/index.html#who-we-are">Quem somos</a></li>
+          <li>
+            <a href="/solucao" class="button button--primary">
+              Junte-se a causa
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="video-player">
+        <video
+          id="hero-banner-video"
+          autoplay
+          muted
+          loop
+          poster="assets/video-banner-fallback.png"
+        >
+          <source src="assets/video-banner.mp4" />
+        </video>
+        <div class="shadow"></div>
+      </div>
+
+      <div class="banner-hero-cta">
+        <h2>
+          <span>Salve os</span>
+          <strong>Oceanos</strong>
+          <span>Seja a diferença</span>
+        </h2>
+        <p>
+          Conectamos voluntários e o meio ambiente de uma forma sustentável.
+        </p>
+      </div>
+
+      <p class="support-text-1">
+        Mapeamos o lixo dentro de oceanos, lagoas e rios, e disponibilizamos
+        informações sobre a melhor forma de limpeza.
+      </p>
+
+      <p class="support-text-2">
+        Junto com os voluntários, coletamos o lixo e damos o destino mais
+        adequado para ele.
+      </p>
+
+      <button class="support-text-3 button button--watch-video">
+        <img src="assets/icons/play.svg" alt="" />
+        <span>Assista o vídeo</span>
+      </button>
+    </header>
+    <main>
+      <article>
+        <section class="grid-container challenges-section">
+          <h2 class="section-title section-title--lg challenges-section__title">
+            Os desafios
+          </h2>
+
+          <div class="challenge full-grid">
+            <h3 class="challenge__title">
+              O lixo causa uma crise ambiental com efeitos devastadores no
+              ecossistema
+            </h3>
+            <p>
+              Plásticos e detritos ingeridos por animais resultam em bloqueios
+              digestivos, intoxicações e morte, prejudicando habitats naturais,
+              biodiversidade e a cadeia alimentar. Essa poluição também afeta
+              comunidades humanas que dependem dos oceanos para sustento,
+              agravando a poluição global e ameaçando a sustentabilidade do
+              planeta.
+            </p>
+          </div>
+
+          <hr class="challenges__divider" />
+
+          <div class="challenge">
+            <h3 class="challenge__title">Perdas milionárias</h3>
+            <p>
+              Os setores que dependem do mar sofrem as consequências. Segundo a
+              União Europeia (UE) os danos e perdas para o setor da pesca em
+              2018 atingiram a cifra de 61,7 bilhões de euros.
+            </p>
+          </div>
+
+          <div class="challenge">
+            <h3 class="challenge__title">Microplásticos na cadeia alimentar</h3>
+            <p>
+              O plástico localizado nos oceanos se decompõe em microfragmentos
+              que são ingeridos pela fauna marinha, o que faz com que cheguem à
+              nossa alimentação com consequências ainda desconhecidas para a
+              saúde humana.
+            </p>
+          </div>
+        </section>
+        <section class="grid-container our-mission-section">
+          <div class="our-mission full-grid">
+            <h2 class="section-title section-title--md translucent-text">
+              Venha ser a diferença
+            </h2>
+
+            <p class="our-mission__description translucent-text">
+              UNIMOS <strong>ANÁLISE DE DADOS</strong> e
+              <strong>mergulhadores</strong> com o propósito de limpar a água do
+              nosso planeta! acreditamos no <strong>futuro</strong> e criamos
+              <strong>consciência</strong> sobre A
+              <strong>sustentabilidade e reciclagem</strong>
+            </p>
+
+            <button class="button button--primary">Faça parte</button>
+
+            <div class="video-player">
+              <video
+                id="our-mission--background"
+                autoplay
+                muted
+                loop
+                poster="assets/video-banner-fallback.png"
+              >
+                <source src="assets/what-we-do-video.mp4" />
+              </video>
+              <div class="backdrop"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-container about-us-section full-grid">
+          <div class="full-grid">
+            <h2 class="section-title section-title--md" id="who-we-are">
+              Quem somos
+            </h2>
+            <p>
+              Somos uma equipe apaixonada por tecnologia e meio ambiente,
+              dedicados a fazer a diferença na preservação dos nossos recursos
+              hídricos
+            </p>
+          </div>
+
+          <ul class="team-list full-grid">
+            <li class="team-list__item">
+              <img src="assets/photos/team/leandro_de_lima.jpg" alt="Equipe" />
+              <p class="team-item__name">Leandro L. Cuminato</p>
+              <p>RM - 556035</p>
+            </li>
+            <li class="team-list__item">
+              <img src="assets/photos/team/leonardo_sagara.png" alt="Equipe" />
+              <p class="team-item__name">Leonardo K. Sagara</p>
+              <p>RM - 558524</p>
+            </li>
+            <li class="team-list__item">
+              <img src="assets/photos/team/edson_marques.png" alt="Equipe" />
+              <p class="team-item__name">Edson F. Marques</p>
+              <p>RM - 554918</p>
+            </li>
+            <li class="team-list__item">
+              <img src="assets/photos/team/pedro_ramondini.png" alt="Equipe" />
+              <p class="team-item__name">Pedro H. Ramondini</p>
+              <p>RM - 558700</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <footer>
+        Copyright © 2024 The DiveOcean Company. Todos os direitos reservados.
+      </footer>
+    </main>
+  </body>
+</html>
