@@ -56,7 +56,7 @@ p {
 
 #our-mission--background {
   width: 100vw;
-  transform: translateY(-25%);
+  transform: translateY(-10%);
   height: 100vh;
   object-fit: cover;
 }
