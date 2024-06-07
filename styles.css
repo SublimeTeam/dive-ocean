@@ -197,14 +197,6 @@
   object-fit: cover;
 }
 
-.backdrop {
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  opacity: 0.55;
-  z-index: 1;
-}
-
 .team-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));

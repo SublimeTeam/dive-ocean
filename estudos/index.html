@@ -13,6 +13,163 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    Página de estudos
+    <header class="grid-container banner-hero">
+      <nav class="main-nav main-nav--dark">
+        <a href="/index.html">
+          <img src="../assets/logo-black.svg" alt="Home page" />
+        </a>
+        <ul class="menu">
+          <li><a href="/desafios">Os desafios</a></li>
+          <li><a href="/estudos">Estudos</a></li>
+          <li><a href="/index.html#who-we-are">Quem somos</a></li>
+          <li>
+            <a href="/solucao" class="button button--primary">
+              Junte-se a causa
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="banner-hero__content">
+        <h1 class="banner-hero__title headline--md">OS Estudos</h1>
+      </div>
+
+      <hr class="banner-hero__divider full-grid" />
+    </header>
+    <main>
+      <article>
+        <section class="grid-container">
+          <div class="full-grid">
+            <ul class="studies__list">
+              <li class="studies__item">
+                <h3>
+                  <cite
+                    >Jambeck, J. R., et al. (2015). <br />
+                    <strong>
+                      "Plastic waste inputs from land into the ocean."
+                    </strong>
+                    Science, 347(6223), 768-771.
+                  </cite>
+                </h3>
+                <p>
+                  Estima-se que milhões de toneladas de plásticos entram nos
+                  oceanos anualmente, com uma distribuição difusa que dificulta
+                  a limpeza.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.science.org/doi/10.1126/science.1260352"
+                >
+                  referência do estudo
+                </a>
+              </li>
+              <li class="studies__item">
+                <h3>
+                  <cite>
+                    Galloway, T. S., & Lewis, C. N. (2016).<br />
+                    <strong>
+                      "Marine microplastics spell big problems for future
+                      generations."
+                    </strong>
+                    Proceedings of the National Academy of Sciences, 113(9),
+                    2331-2333.
+                  </cite>
+                </h3>
+                <p>
+                  Microplásticos são ingeridos por organismos marinhos, causando
+                  bloqueios digestivos e toxidade, afetando a saúde e a
+                  sobrevivência de diversas espécies.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.pnas.org/doi/full/10.1073/pnas.1600715113"
+                >
+                  referência do estudo
+                </a>
+              </li>
+              <li class="studies__item">
+                <h3>
+                  <cite>
+                    Teuten, E. L., et al. (2009).<br />
+                    <strong>
+                      "Transport and release of chemicals from plastics to the
+                      environment and to wildlife."
+                    </strong>
+                    Philosophical Transactions of the Royal Society B:
+                    Biological Sciences, 364(1526), 2027-2045.
+                  </cite>
+                </h3>
+                <p>
+                  Plásticos liberam contaminantes químicos no ambiente marinho,
+                  que entram na cadeia alimentar e afetam a saúde de animais e
+                  humanos.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2873017"
+                >
+                  referência do estudo
+                </a>
+              </li>
+              <li class="studies__item">
+                <h3>
+                  <cite>
+                    Lebreton, L., et al. (2018). <br />
+                    <strong>
+                      "Evidence that the Great Pacific Garbage Patch is rapidly
+                      accumulating plastic."
+                    </strong>
+                    Scientific Reports, 8(1), 4666.
+                  </cite>
+                </h3>
+                <p>
+                  A acumulação rápida de plásticos no Great Pacific Garbage
+                  Patch destaca a necessidade de tecnologias avançadas e
+                  eficazes para a remoção de detritos marinhos.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.nature.com/articles/s41598-018-22939-w"
+                >
+                  referência do estudo
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="grid-container our-mission-section">
+          <div class="our-mission full-grid">
+            <h3 class="headline--sm translucent-text">Venha ser a diferença</h3>
+
+            <p class="our-mission__description translucent-text">
+              UNIMOS <strong>ANÁLISE DE DADOS</strong> e
+              <strong>mergulhadores</strong> com o propósito de limpar a água do
+              nosso planeta! acreditamos no <strong>futuro</strong> e criamos
+              <strong>consciência</strong> sobre A
+              <strong>sustentabilidade e reciclagem</strong>
+            </p>
+
+            <a href="/solucao" class="button button--primary">Faça parte</a>
+
+            <div class="video-player">
+              <video
+                id="our-mission--background"
+                autoplay
+                muted
+                loop
+                poster="../assets/video-banner-fallback.png"
+              >
+                <source src="../assets/what-we-do-video.mp4" />
+              </video>
+              <div class="backdrop"></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <footer>
+        Copyright © 2024 The DiveOcean Company. Todos os direitos reservados.
+      </footer>
+    </main>
   </body>
 </html>
