@@ -26,6 +26,7 @@
 .clickable-card__item {
   flex: 1;
   border-radius: 4px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -36,6 +37,16 @@
   padding: 4rem 3.25rem;
   position: relative;
   z-index: 1;
+}
+
+.card-item__container:hover {
+  transform: scale(1.08);
+  transition: 0.15s transform ease-in-out;
+}
+
+.card-item__container:hover ~ .background-shim {
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: 0.15s background-color ease-in;
 }
 
 .donate-background {
