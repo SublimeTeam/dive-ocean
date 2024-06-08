@@ -106,6 +106,15 @@ input:focus {
   color: var(--black);
 }
 
+.button--primary:hover {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.button--primary:active {
+  outline: 0px solid var(--color-primary);
+}
+
 /* --- FOOTER --- */
 
 footer {
@@ -140,6 +149,28 @@ footer {
   font-weight: 800;
   font-size: 14px;
   align-self: center;
+}
+
+.underline-animate {
+  position: relative;
+}
+
+.underline-animate::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animate:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .main-nav--dark ul li {

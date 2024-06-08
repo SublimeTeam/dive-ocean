@@ -1,9 +1,5 @@
 @import url("../css/styles.css");
 
-.banner-hero {
-  max-height: 50vh;
-}
-
 .banner-hero__content {
   display: flex;
   flex-direction: column;
